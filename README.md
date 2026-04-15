@@ -28,8 +28,8 @@
 <br>Use proper tagging.
 <br>Follow a clean and readable structure.
 
-=============================================================================
-=============================================================================
+==========================================================================
+==========================================================================
 # Push Docker Image to Docker Hub
 
 This guide explains how to push a Docker image to Docker Hub step by step.
@@ -66,7 +66,7 @@ Example output:
 
 ```
 REPOSITORY                      TAG       IMAGE ID
-flask_practice-flask-app        latest    abc123
+flask_practice-flask-app        latest    abc@123
 ```
 
 ---
@@ -81,7 +81,7 @@ Format:
 Example:
 
 ```bash
-docker tag flask_practice-flask-app avinashsain65/flask-app:latest
+docker tag flask_practice-flask-app aksoam/flask-app:latest
 ```
 
 ---
@@ -99,7 +99,7 @@ docker tag flask_practice-flask-app avinashsain65/flask-app:latest
 ## 🔹 Step 5: Push Image
 
 ```bash
-docker push avinashsain65/flask-app:latest
+docker push aksoam/flask-app:latest
 ```
 
 ---
@@ -108,14 +108,14 @@ docker push avinashsain65/flask-app:latest
 
 Your image is now available at:
 
-https://hub.docker.com/r/avinashsain65/flask-app
+https://hub.docker.com/r/aksoam/flask-app
 
 ---
 
 ## Verify
 
 ```bash
-docker pull avinashsain65/flask-app:latest
+docker pull aksoam/flask-app:latest
 ```
 
 ---
@@ -140,7 +140,7 @@ Make sure image name is correct.
 ## Run Image Anywhere
 
 ```bash
-docker run -d -p 2050:2050 avinashsain65/flask-app:latest
+docker run -d -p 2050:2050 aksoam/flask-app:latest
 ```
 
 ---
@@ -148,8 +148,8 @@ docker run -d -p 2050:2050 avinashsain65/flask-app:latest
 ## Best Practice (Versioning)
 
 ```bash
-docker tag flask_practice-flask-app avinashsain65/flask-app:v1
-docker push avinashsain65/flask-app:v1
+docker tag flask_practice-flask-app aksoam/flask-app:v1
+docker push aksoam/flask-app:v1
 ```
 
 ---
@@ -164,6 +164,4 @@ docker push <username>/<repo>:latest
 ```
 
 ---
-
-Done! Your Docker image is now live on Docker Hub.
 
