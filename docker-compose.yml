@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  flask-app:
+    build: .
+    container_name: flask-container
+    ports:
+      - "2050:2050"
+    environment:
+      - MONGO_URI=mongodb+srv://avinashsain65_db_user:TGyVdGAv1aYyOgqi@herocluster1.csewjfm.mongodb.net/flask_db_26
+    restart: always
